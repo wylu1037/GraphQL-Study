@@ -25,6 +25,7 @@ type ConsortiumChain {
     createAt: String
     updateAt: String
     user: User
+    nodeList: [ChainNode]
 }
 
 type User {
@@ -33,6 +34,19 @@ type User {
     nick: String
     email: String
     sex: Int
+    remark: String
+    createAt: String
+    updateAt: String
+}
+
+type ChainNode {
+    id: ID
+    userId: Int
+    name: String
+    chainId: Int
+    type: Int
+    ip: String
+    port: Int
     remark: String
     createAt: String
     updateAt: String
