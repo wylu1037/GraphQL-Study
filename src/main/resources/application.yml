@@ -1,0 +1,11 @@
+spring:
+    graphql:
+        graphiql:
+            enabled: true
+            path: /graphiql
+
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://124.220.192.22:3306/business?serverTimezone=GMT+8&useUnicode=true&characterEncoding=utf-8
+        username: root
+        password: hust1037
