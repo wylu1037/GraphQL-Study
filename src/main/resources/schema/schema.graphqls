@@ -24,4 +24,16 @@ type ConsortiumChain {
     description: String
     createAt: String
     updateAt: String
+    user: User
+}
+
+type User {
+    id: ID
+    name: String
+    nick: String
+    email: String
+    sex: Int
+    remark: String
+    createAt: String
+    updateAt: String
 }
