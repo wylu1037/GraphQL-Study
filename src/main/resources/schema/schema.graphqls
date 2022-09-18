@@ -1,0 +1,27 @@
+type Query {
+    bookById(id: ID): Book
+    findConsortiumChainById(id: ID): ConsortiumChain
+}
+
+type Book {
+    id: ID
+    name: String
+    pageCount: Int
+    author: Author
+}
+
+type Author {
+    id: ID
+    firstName: String
+    lastName: String
+}
+
+type ConsortiumChain {
+    id: ID
+    name: String
+    championId: Int
+    email: String
+    description: String
+    createAt: String
+    updateAt: String
+}

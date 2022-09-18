@@ -49,7 +49,7 @@ public class MybatisPlusConfig {
         configuration.setMapUnderscoreToCamelCase(false);
         configuration.setCallSettersOnNulls(true);
         // 正式环境需要屏蔽：MybatisPlus执行SQL时，将其打印出来
-        //configuration.setLogImpl(org.apache.ibatis.logging.stdout.StdOutImpl.class);
+        // configuration.setLogImpl(org.apache.ibatis.logging.stdout.StdOutImpl.class);
         sessionFactory.setConfiguration(configuration);
 
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
