@@ -27,7 +27,10 @@ dependencies {
     implementation springBootStarter.jdbc
     implementation springBootStarter.graphql
     implementation springBootStarter.mybatisPlus
-    implementation springBootStarter.druid
+    implementation(springBootStarter.druid) {
+        exclude group: 'com.sun', module: 'tools'
+        exclude group: 'com.sun', module: 'jconsole'
+    }
     implementation springBootStarter.mybatis
     implementation springBootStarter.webflux
     implementation libs.mysqlConnectJava
