@@ -1,4 +1,4 @@
-FROM 7-jdk8-jammy AS builder
+FROM gradle:7-jdk8-jammy AS builder
 WORKDIR /tmp
 COPY . /tmp
 RUN gradle 'bootJar'
