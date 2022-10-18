@@ -1,9 +1,9 @@
-FROM gradle:7-jdk8-jammy AS builder
+FROM gradle:7.5-jdk17-jammy AS builder
 WORKDIR /tmp
 COPY . /tmp
 RUN gradle 'bootJar'
 
-FROM openjdk:8-jdk-alpine AS runner
+FROM openjdk:17-jdk-alpine AS runner
 WORKDIR /app
 COPY --from=builder /tmp/GraphQL-Study/build/libs/*.jar ./app.jar
 
